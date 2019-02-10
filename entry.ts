@@ -1,7 +1,7 @@
-import Timeline from './Timeline'; // 引用上一步中，你自己定义的 Timeline
-import 'short-night/styles.css'; // 官方定义的引用 CSS 文件
+import Timeline from './Timeline';
+import 'short-night/styles.css'; // Import css in short night engine
 
-const events = [{ // 定义事件列表
+const events = [{ // Events data
     date: '2017-5',
     title: 'Axis example 1',
     endDate: '2017-8',
@@ -60,12 +60,12 @@ const events = [{ // 定义事件列表
         'So some people call as Giving Day.'
 }];
 
-// 实例化
+// Instantiation
 
 const timeline = new Timeline(Timeline.mount('#app', 'polar-day'));
 
 timeline.drawInfo.events = events; // 赋值事件列表
 
-timeline.apply().then(function () { // 应用 timeline 中的 drawInfo。此方法返回一个 Promise
-    timeline.draw(); // 当应用完成后，将 timeline 画出
+timeline.apply().then(function () { // Apply the drawInfo of timeline, it's return a Promise
+    timeline.draw(); // Draw a timeline when it applied
 });

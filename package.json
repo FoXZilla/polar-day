@@ -1,7 +1,7 @@
 {
   "name": "polar-day-master",
   "version": "1.0.0",
-  "description": "A minimum theme for short-night.",
+  "description": "A very sample timeline using short-night as engine.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --watch --mode=development",
@@ -13,7 +13,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/FoXZilla/polar-day/issues"
   },
