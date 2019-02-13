@@ -13,9 +13,4 @@ module.exports = {
         ],
     },
     resolve: { extensions: ['.js', '.ts'] },
-    plugins: [
-        new Webpack.DefinePlugin({ // Short Night 依赖于此插件来读取是否开启 Debug 模式
-            'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-        }),
-    ],
 };
