@@ -1,10 +1,11 @@
 {
-  "name": "polar-day-master",
-  "version": "1.0.0",
+  "name": "@foxzilla/polar-day",
+  "version": "0.0.1",
   "description": "A very sample timeline using short-night as engine.",
   "main": "index.js",
   "scripts": {
     "dev": "webpack --watch --mode=development",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
