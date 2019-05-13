@@ -1,6 +1,6 @@
 {
   "name": "@foxzilla/polar-day",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A very sample timeline using short-night as engine.",
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "ajv": "^6.8.1",
-    "short-night": "0.0.12"
+    "short-night": "0.0.23"
   }
 }

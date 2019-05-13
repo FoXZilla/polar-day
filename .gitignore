@@ -71,3 +71,4 @@ extensions/**/*.js
 output.js
 entry.js
 Timeline.js
+index.js
