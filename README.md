@@ -69,11 +69,40 @@ Drawn a timeline:
 
 ![](./example.png)
 
-# Run
+# Develop for polar-day
 
 ```sh
 npm install
 npm run dev
+# then open example/index.html into your browser
 ```
 
 Then drag the `/index.html` into your browser.
+
+# Using
+
+In webpack:
+
+```js
+import Timeline from "@foxzilla/polar-day";
+
+const timeline = new Timeline(Timeline.mount('#app', 'polar-day'));
+timeline.drawInfo.events = [
+    // ...
+];
+timeline.apply().then(() => {
+    timeline.draw();
+});
+```
+
+In static html:
+
+```js
+const timeline = new PolarDay.Timeline(PolarDay.Timeline.mount('#app', 'polar-day'));
+timeline.drawInfo.events = [
+    // ...
+];
+timeline.apply().then(() => {
+    timeline.draw();
+});
+```

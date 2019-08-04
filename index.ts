@@ -1,4 +1,5 @@
-import Timeline from './Timeline';
 import 'short-night/styles.css';
+import Timeline from './Timeline';
 
 export default Timeline;
+export { Timeline };

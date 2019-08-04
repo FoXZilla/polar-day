@@ -1,4 +1,4 @@
-import Timeline from './Timeline';
+import Timeline from '../Timeline';
 import 'short-night/styles.css'; // Import css in short night engine
 
 const events = [{ // Events data

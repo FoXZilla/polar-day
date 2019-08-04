@@ -1,11 +1,20 @@
 {
   "name": "@foxzilla/polar-day",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "description": "A very sample timeline using short-night as engine.",
-  "main": "index.js",
+  "main": "output.js",
+  "typings": "index.ts",
+  "files": [
+    "Axis/",
+    "Event/",
+    "Timeline.ts",
+    "Timeline.js",
+    "index.ts",
+    "output.js"
+  ],
   "scripts": {
     "dev": "webpack --watch --mode=development",
-    "build": "tsc",
+    "build": "webpack --mode=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

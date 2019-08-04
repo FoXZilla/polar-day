@@ -62,13 +62,3 @@ typings/
 
 # IDE
 .idea
-
-# Build
-Axis/**/*.js
-Event/**/*.js
-common/**/*.js
-extensions/**/*.js
-output.js
-entry.js
-Timeline.js
-index.js
