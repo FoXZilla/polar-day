@@ -1,4 +1,4 @@
-import draw from '../index';
+import draw from '../'; // from the "main" and "typings" of package.json
 
 const events = [{ // Events data
     date: '2017-5',

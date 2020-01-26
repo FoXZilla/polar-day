@@ -1,12 +1,13 @@
 const Webpack = require('webpack');
+const Path = require('path');
 
 module.exports = {
     entry: {
-        'example/webpack-output': './example/webpack.ts',
-        output: './index.ts'
+        'webpack-example': './src/webpack-example.ts',
+        'polar-day': './src/index.ts'
     },
     output: {
-        path: __dirname,
+        path: Path.join(__dirname, 'dist/'),
         filename: '[name].js',
         libraryTarget: 'umd',
         library: 'PolarDay',
