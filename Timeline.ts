@@ -3,7 +3,7 @@ import Axis from './Axis';
 import Event from './Event';
 
 export default class Timeline extends Engine.Timeline {
-    theme = 'colors';
+    theme = 'polar-day';
 
     axisConstructor = Axis;
     eventConstructor = Event;

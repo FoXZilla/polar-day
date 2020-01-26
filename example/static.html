@@ -8,7 +8,7 @@
 
 <script src="../output.js"></script>
 <script>
-    const events = [{ // Events data
+    PolarDay('#app', [{ // Events data
         date: '2017-5',
         title: 'Axis example 1',
         endDate: '2017-8',
@@ -65,18 +65,7 @@
         title: '39s Day!',
         description: 'In japan and chinese, the pronunciation  of 39 is very like "Thank You". ' +
             'So some people call as Giving Day.'
-    }];
-
-    // Instantiation
-
-    const timeline = new PolarDay.Timeline(PolarDay.Timeline.mount('#app', 'polar-day'));
-
-    timeline.drawInfo.events = events; // 赋值事件列表
-
-    timeline.apply().then(function () { // Apply the drawInfo of timeline, it's return a Promise
-        timeline.draw(); // Draw a timeline when it applied
-    });
-
+    }]);
 </script>
 </body>
 </html>

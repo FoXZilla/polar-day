@@ -1,5 +1,4 @@
-import Timeline from '../Timeline';
-import 'short-night/styles.css'; // Import css in short night engine
+import draw from '../index';
 
 const events = [{ // Events data
     date: '2017-5',
@@ -61,11 +60,12 @@ const events = [{ // Events data
 }];
 
 // Instantiation
+(async function () {
+    const timeline = await draw('#app', events);
+    const data = timeline.export();
 
-const timeline = new Timeline(Timeline.mount('#app', 'polar-day'));
+    timeline.destroy();
 
-timeline.drawInfo.events = events; // 赋值事件列表
+    draw('#app', data)
 
-timeline.apply().then(function () { // Apply the drawInfo of timeline, it's return a Promise
-    timeline.draw(); // Draw a timeline when it applied
-});
+}());
