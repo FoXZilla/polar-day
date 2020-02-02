@@ -1,10 +1,11 @@
 {
   "name": "@foxzilla/polar-day",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A very sample timeline using short-night as engine.",
   "main": "./dist/polar-day.js",
   "typings": "./src/index.ts",
   "files": [
+    "src/",
     "dist/"
   ],
   "scripts": {
