@@ -11,7 +11,6 @@ module.exports = {
         filename: '[name].js',
         libraryTarget: 'umd',
         library: 'PolarDay',
-        libraryExport: 'default',
     },
     module: {
         rules: [

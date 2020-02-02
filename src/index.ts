@@ -1,5 +1,8 @@
-import 'short-night/styles.css';
 import Timeline from './Timeline';
-import { createDraw } from 'short-night/common/functions'
+import { createDraw } from 'short-night/common/functions';
+import * as Engine from 'short-night';
 
-export default createDraw('polar-day', Timeline);
+import 'short-night/styles.css';
+
+export const draw = createDraw<Timeline, typeof Timeline>('polar-day', Timeline);
+export { Engine, Timeline };
